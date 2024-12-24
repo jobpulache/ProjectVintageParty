@@ -1,6 +1,46 @@
+:root {
+    --white: #fff;
+    --grayLight: #9E9E9E;
+    --black: #1A1A1A;
+    --dark: #4D4D4D;
+    --darkMoreLight: #9e9e9e9c;
+    --darkLight: #B3B3B3;
+    --darkExtraLight: #F2F2F2;
+    --darkBlue: #000A1D;
 
 
-body{
+}
+
+body {
     background: linear-gradient(135deg, #7d7d81 0%, #3b0764 30%, #693f8a 50%, #072a61 80%, #3b82f6 100%);
     min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container-create-acount .content-create-acount .vintage-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.container-create-acount .content-create-acount .vintage-cont .slider-carousel .activate {
+    width: 12rem;
+    height: 6px;
+    background-color: var(--white);
+}
+
+.container-create-acount .content-create-acount .vintage-cont .slider-carousel span {
+    width: 12rem;
+    height: 6px;
+    background-color: var(--darkMoreLight);
+    margin-right: 4rem;
 }
