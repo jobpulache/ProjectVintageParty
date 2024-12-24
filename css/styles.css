@@ -23,6 +23,9 @@ body {
 .d-flex {
     display: flex;
 }
+.t-uppercase{
+    text-transform: uppercase;
+}
 
 .container-create-acount .content-create-acount .vintage-cont {
     display: flex;
