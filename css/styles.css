@@ -7,6 +7,7 @@
     --darkLight: #B3B3B3;
     --darkExtraLight: #F2F2F2;
     --darkBlue: #000A1D;
+    --bgButtons: #212121;
 
 
 }
@@ -68,43 +69,73 @@ body {
 }
 
 .container-create-acount .content-create-acount .form-create-acount {
-    background-color: var(--white);
-    width: 50%;
-    height: 100vh;
-    margin-right: 2rem;
-    margin-top: 1rem;
+    width: 100%;
+    padding: 20px;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount {
-    margin: 4rem 0 0 6rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options {
+    gap: 19px;
+    margin-bottom: 24px;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options button {
-    background-color: transparent;
+    padding: 8px 24px;
     border: 1px solid var(--darkLight);
-    padding: 0.6rem;
-    width: 25%;
-    margin-right: 2rem;
-    font-weight: bold;
-
-    &:hover {
-        cursor: pointer;
-        background-color: var(--darkLight);
-    }
+    background: var(--white);
+    cursor: pointer;
 }
 
-.container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .form-data-create-acount {
-    width: 100%;
-}
-
-.container-create-acount .content-create-acount .form-create-acount fieldset {
-    margin-top: 1rem;
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset {
     border: none;
-    width: 100%;
+    padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset>div {
+    position: relative;
+    width: 100%;
 }
-.content-create-acount .form-create-acount .content-form-create-acount .form-data-create-acount fieldset .socialReason input{
-    
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input {
+    width: 50%;
+    padding: 16px;
+    border: 1px solid var(--darkLight);
+    border-radius: 4px;
+    font-size: 16px;
 }
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount label {
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 4px;
+    color: #666;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.form-data-create-acount input:focus+label,
+.form-data-create-acount input:not(:placeholder-shown)+label {
+    top: 0;
+    transform: translateY(-50%) scale(0.8);
+    color: var(--darkLight);
+}
+.form-data-create-acount input[type="submit"] {
+    grid-column: 1 / -1;
+    background: var(--bgButtons) ;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
