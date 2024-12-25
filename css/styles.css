@@ -23,7 +23,8 @@ body {
 .d-flex {
     display: flex;
 }
-.t-uppercase{
+
+.t-uppercase {
     text-transform: uppercase;
 }
 
@@ -35,15 +36,33 @@ body {
     gap: 5rem;
 }
 
+.container-create-acount .content-create-acount .vintage-cont .img-create-acount {
+    margin-top: -2rem;
+    margin-left: 3rem;
+}
+.container-create-acount .content-create-acount .vintage-cont .slider-carousel {
+    width: 80%;
+    margin:  0 auto;
+}
+
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel .activate {
-    width: 12rem;
-    height: 6px;
+    width: 9rem;
     background-color: var(--white);
 }
 
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel span {
-    width: 12rem;
-    height: 6px;
+    margin-top: 4rem;
+    width: 7rem;
+    height: 3px;
     background-color: var(--darkMoreLight);
-    margin-right: 4rem;
+    margin-right: 2rem;
+}
+
+.container-create-acount .content-create-acount .form-create-acount {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.container-create-acount .content-create-acount .form-create-acount fieldset {
+    border: none;
 }
