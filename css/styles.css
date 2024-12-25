@@ -24,6 +24,14 @@ body {
     display: flex;
 }
 
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
 .t-uppercase {
     text-transform: uppercase;
 }
@@ -37,12 +45,13 @@ body {
 }
 
 .container-create-acount .content-create-acount .vintage-cont .img-create-acount {
-    margin-top: -2rem;
+    margin-top: -4rem;
     margin-left: 3rem;
 }
+
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel {
     width: 80%;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel .activate {
@@ -51,7 +60,7 @@ body {
 }
 
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel span {
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 7rem;
     height: 3px;
     background-color: var(--darkMoreLight);
@@ -60,9 +69,42 @@ body {
 
 .container-create-acount .content-create-acount .form-create-acount {
     background-color: var(--white);
+    width: 50%;
+    height: 100vh;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.container-create-acount .content-create-acount .form-create-acount .content-form-create-acount {
+    margin: 4rem 0 0 6rem;
+}
+
+.container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options button {
+    background-color: transparent;
+    border: 1px solid var(--darkLight);
+    padding: 0.6rem;
+    width: 25%;
+    margin-right: 2rem;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--darkLight);
+    }
+}
+
+.container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .form-data-create-acount {
     width: 100%;
 }
 
 .container-create-acount .content-create-acount .form-create-acount fieldset {
+    margin-top: 1rem;
     border: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.content-create-acount .form-create-acount .content-form-create-acount .form-data-create-acount fieldset .socialReason input{
+    
 }
