@@ -42,16 +42,16 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    margin-top: -20rem;
+    gap: 3rem;
 }
 
 .container-create-acount .content-create-acount .vintage-cont .img-create-acount {
-    margin-top: -4rem;
     margin-left: 3rem;
 }
 
 .container-create-acount .content-create-acount .vintage-cont .slider-carousel {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -69,25 +69,28 @@ body {
 }
 
 .container-create-acount .content-create-acount .form-create-acount {
-    width: 100%;
+    width: 40%;
     padding: 20px;
+    background-color: var(--white);
+    margin-top: 1rem;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options {
-    gap: 19px;
+    gap: 40px;
     margin-bottom: 24px;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options button {
-    padding: 8px 24px;
+    padding: 8px 30px;
     border: 1px solid var(--darkLight);
     background: var(--white);
     cursor: pointer;
+    font-weight: 700;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset {
@@ -96,46 +99,56 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset>div {
     position: relative;
-    width: 100%;
+    width: 91%;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input {
-    width: 50%;
-    padding: 16px;
+    width: 100%;
+    height: 30px;
+    padding: 20px 16px 0;
     border: 1px solid var(--darkLight);
     border-radius: 4px;
     font-size: 16px;
+    position: relative;
+    background: transparent;
+    z-index: 1;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount label {
     left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    padding: 0 4px;
-    color: #666;
-    transition: all 0.2s ease-in-out;
+    top: 20px;
+    background: transparent;
+    padding: 0 2px;
+    color: var(--dark);
+    transition: all 0.2s ease-out;
+    transform-origin: left top;
     pointer-events: none;
+    font-size: 14px;
 }
 
-.form-data-create-acount input:focus+label,
-.form-data-create-acount input:not(:placeholder-shown)+label {
-    top: 0;
-    transform: translateY(-50%) scale(0.8);
-    color: var(--darkLight);
+.form-data-create-acount input:focus~label,
+.form-data-create-acount input:not(:placeholder-shown)~label {
+    transform: translateY(-12px) scale(0.75);
+    color: #007bff;
 }
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input:focus {
+    outline: none;
+    border-color: #3b0764;
+}
+
 .form-data-create-acount input[type="submit"] {
     grid-column: 1 / -1;
-    background: var(--bgButtons) ;
-    color: white;
+    background-color: var(--bgButtons);
+    color: var(--black);
     border: none;
-    padding: 6px;
+    padding: 17px;
     cursor: pointer;
     margin-top: 16px;
-  }
-  
+    height: auto;
+}
