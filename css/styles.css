@@ -37,6 +37,12 @@ body {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
+.item-center{
+    align-items: center;
+}
 .container-create-acount .content-create-acount .vintage-cont {
     display: flex;
     align-items: center;
@@ -99,13 +105,17 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px ;
+    gap: 10px;
 }
 
-.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset .socialReason, 
-.cardIdentity, .direction, .password, .contactPerson, .email{
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset .socialReason,
+.cardIdentity,
+.direction,
+.password,
+.contactPerson,
+.email {
     grid-column: 1 / -1;
-   
+
 }
 
 
@@ -113,14 +123,20 @@ body {
     position: relative;
     width: 91%;
 }
-.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input #socialReason, 
-#cardIdentity, #direction, #password, #contactPerson, #email, #socialReason{
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input #socialReason,
+#cardIdentity,
+#direction,
+#password,
+#contactPerson,
+#email,
+#socialReason {
     width: 101%;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input {
     width: 90%;
-    height: 30px;
+    height: 25px;
     padding: 20px 16px 0;
     border: 1px solid var(--darkLight);
     border-radius: 4px;
@@ -128,6 +144,10 @@ body {
     position: relative;
     background: transparent;
     z-index: 1;
+}
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount .country input {
+    background-color: var(--darkMoreLight);
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount label {
@@ -150,18 +170,37 @@ body {
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input:focus {
     outline: none;
-    border-color: #3b0764;
+    border-color: var(--dark);
 }
 
 .form-data-create-acount input[type="submit"] {
     grid-column: 1 / -1;
-    background-color: var(--bgButtons)!important;
+    background-color: var(--bgButtons) !important;
     color: var(--black);
     border: none;
-    padding: 2px!important;
+    padding: 2px !important;
     cursor: pointer;
     margin-top: 16px;
-    height: 60px!important;
+    height: 60px !important;
     color: var(--white);
-    width: 98%!important;
+    width: 98% !important;
+}
+
+/*F00ter*/
+.footerCreateAcount {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30rem;
+    margin-right: 6rem;
+    color: var(--white);
+}
+.footerCreateAcount .needHelp i{
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.footerCreateAcount .needHelp a {
+
+    color: var(--white);
 }
