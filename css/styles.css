@@ -42,7 +42,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: -20rem;
+    margin-top: -8rem;
     gap: 3rem;
 }
 
@@ -76,17 +76,17 @@ body {
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options {
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 24px;
 }
 
 .container-create-acount .content-create-acount .form-create-acount .content-form-create-acount .buttons-options button {
-    padding: 8px 30px;
+    padding: 8px 40px;
     border: 1px solid var(--darkLight);
     background: var(--white);
     cursor: pointer;
@@ -98,17 +98,28 @@ body {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px ;
 }
+
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset .socialReason, 
+.cardIdentity, .direction, .password, .contactPerson, .email{
+    grid-column: 1 / -1;
+   
+}
+
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount fieldset>div {
     position: relative;
     width: 91%;
 }
+.container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input #socialReason, 
+#cardIdentity, #direction, #password, #contactPerson, #email, #socialReason{
+    width: 101%;
+}
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input {
-    width: 100%;
+    width: 90%;
     height: 30px;
     padding: 20px 16px 0;
     border: 1px solid var(--darkLight);
@@ -144,11 +155,13 @@ body {
 
 .form-data-create-acount input[type="submit"] {
     grid-column: 1 / -1;
-    background-color: var(--bgButtons);
+    background-color: var(--bgButtons)!important;
     color: var(--black);
     border: none;
-    padding: 17px;
+    padding: 2px!important;
     cursor: pointer;
     margin-top: 16px;
-    height: auto;
+    height: 60px!important;
+    color: var(--white);
+    width: 98%!important;
 }
