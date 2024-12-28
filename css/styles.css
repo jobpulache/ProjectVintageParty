@@ -204,3 +204,59 @@ a {
 
     color: var(--white);
 }
+/*Header*/
+.container-header .content-header{
+    margin-right: 2rem;
+}
+.container-header .content-header, .icons-header{
+    gap: 6px;
+}
+.container-header .content-header, .icons-header, .Companies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-header .content-header  a .Companies{
+    background-color: var(--darkBlue);
+    border-radius: 1.7rem;
+    gap: 6px;
+    height: 2rem;
+}
+.container-header .content-header  a .Companies .icon{
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.container-header .content-header .Companies .icon i{
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+.container-header .content-header .Companies p{
+    color: var(--white);
+}
+.container-header .content-header .flag{
+    margin-left: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+    color: var(--white);
+    gap: 4px;
+}
+.container-header .content-header .flag i{
+    font-size: 12px;
+    margin-top: 0.2rem;
+}
+.container-header .content-header .icons{
+    margin-left: 9px;
+}
+.container-header .content-header .icons a{
+    color: var(--white);
+    font-size: 24px;
+    gap: 5px;
+    &:hover{
+        cursor: pointer;
+    };
+  
+}
