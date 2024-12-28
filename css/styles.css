@@ -260,3 +260,26 @@ a {
     };
   
 }
+/*Categories*/
+.container-categories .content-categories button{
+    background-color: transparent;
+    border: none;
+}
+.container-categories .content-categories button i{
+    font-size: 1.8rem;
+    color: var(--white);
+    &:hover{
+        cursor: pointer;
+    }
+}
+.container-categories .content-categories button a{
+    color: var(--white);
+    margin-top: 4px;
+}
+
+.container-categories .content-categories .categories a{
+    margin-top: 4px;
+    color: var(--white);
+    margin-left: 10px;
+}
+
