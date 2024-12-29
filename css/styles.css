@@ -9,6 +9,7 @@
     --darkBlue: #000A1D;
     --bgButtons: #212121;
     --bgRectangleFather: #031F1E;
+    --bgImage: #FCECDF;
 
 }
 
@@ -23,6 +24,10 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.j-center {
+    justify-content: center;
 }
 
 .p-relative {
@@ -318,8 +323,9 @@ a {
     width: 100%;
     display: block;
     border-radius: 10px;
-    
+
 }
+
 .text-overlay {
     top: 30%;
     left: 10%;
@@ -327,6 +333,7 @@ a {
     padding: 20px;
     border-radius: 10px;
 }
+
 .text-overlay h1 {
     background: linear-gradient(to right, #FBCC55 0%, #AC8C3A 40%, #957932 40%, #E7C366 73%);
     -webkit-background-clip: text;
@@ -354,35 +361,201 @@ a {
     width: 90%;
     margin: 1.1rem;
 }
-.splide .container-rectangle{
-    background-color: var(--bgRectangleFather);
+
+.splide .container-rectangle {
+    background-color: var(--darkMoreLight);
     margin-top: -13rem;
     height: 100px;
     width: 60%;
-    margin-left: 13rem;
+    margin-left: 17rem;
 
 }
+
 .splide .container-rectangle .content-rectangle {
-    width: 60%;
+    width: 80%;
     gap: 0.4rem;
 
 }
+
 .splide .container-rectangle .content-rectangle .first-rectangle {
-    width: 60%;
+    width: 80%;
 }
-.splide .container-rectangle .content-rectangle .first-rectangle, .second-rectangle{
+
+.splide .container-rectangle .content-rectangle .first-rectangle,
+.second-rectangle {
     background-color: var(--white);
     align-items: center;
     justify-content: center;
-    height:60px;
+    height: 60px;
     margin-top: 1rem;
 }
-.splide .container-rectangle .content-rectangle .first-rectangle i, .second-rectangle i{
+
+.splide .container-rectangle .content-rectangle .first-rectangle i,
+.second-rectangle i {
     font-size: 2rem;
 }
-.splide .container-rectangle .content-rectangle .first-rectangle h2, .second-rectangle h2{
+
+.splide .container-rectangle .content-rectangle .first-rectangle h2,
+.second-rectangle h2 {
     font-size: 1rem;
 }
-.splide .container-rectangle .content-rectangle  .second-rectangle{
+
+.splide .container-rectangle .content-rectangle .second-rectangle {
     width: 50%;
 }
+
+.splide .container-rectangle .content-rectangle .button-reservation {
+    background-color: #031F1E;
+    height: 40px;
+    margin-top: 1.6rem;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.splide .container-rectangle .content-rectangle .button-reservation .circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 6px 0 0 .3rem;
+}
+
+.splide .container-rectangle .content-rectangle .button-reservation .circle i {
+    justify-content: center;
+    margin-top: 3px;
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+.splide .container-rectangle .content-rectangle .button-reservation h2 {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+/*Second carousel*/
+.container-carousel .content-carousel {
+    background-color: var(--white);
+}
+
+.container-carousel .content-carousel .iconLeft,
+.iconRight {
+    background-color: var(--darkExtraLight);
+    width: 30px;
+    height: 60px;
+    margin-top: 2.4rem;
+    -webkit-box-shadow: 4px 10px 26px 3px rgba(214, 203, 214, 1);
+    -moz-box-shadow: 4px 10px 26px 3px rgba(214, 203, 214, 1);
+    box-shadow: 4px 10px 26px 3px rgb(204, 190, 204);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    ;
+
+}
+
+.container-carousel .content-carousel .iconLeft i,
+.iconRight i {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.container-carousel {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.content-carousel {
+    width: 100%;
+}
+
+.content-products {
+    width: 100%;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.content-products::-webkit-scrollbar {
+    display: none;
+    /* Para Chrome y Safari */
+}
+
+.firstFournite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.firstFournite img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.firstFournite::after {
+    content: '';
+    position: absolute;
+    margin: -3px;
+    border-radius: 50%;
+    border: 4px dashed #ef4444;
+    animation: girar 10s linear infinite;
+    z-index: 0;
+    width: 130px;
+    height: 130px;
+}
+.firstFournite p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+    .firstFournite img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .firstFournite::after {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .firstFournite p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .firstFournite img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .firstFournite::after {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .firstFournite p {
+      font-size: 11px;
+    }
+    
+    .content-products {
+      gap: 10px;
+    }
+  }
