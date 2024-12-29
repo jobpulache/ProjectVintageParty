@@ -8,7 +8,7 @@
     --darkExtraLight: #F2F2F2;
     --darkBlue: #000A1D;
     --bgButtons: #212121;
-
+    --bgRectangleFather: #031F1E;
 
 }
 
@@ -40,9 +40,11 @@ body {
 a {
     text-decoration: none;
 }
-.item-center{
+
+.item-center {
     align-items: center;
 }
+
 .container-create-acount .content-create-acount .vintage-cont {
     display: flex;
     align-items: center;
@@ -195,7 +197,8 @@ a {
     margin-right: 6rem;
     color: var(--white);
 }
-.footerCreateAcount .needHelp i{
+
+.footerCreateAcount .needHelp i {
     font-size: 1.2rem;
     margin-right: 5px;
 }
@@ -204,82 +207,182 @@ a {
 
     color: var(--white);
 }
+
 /*Header*/
-.container-header .content-header{
+.container-header .content-header {
     margin-right: 2rem;
 }
-.container-header .content-header, .icons-header{
+
+.container-header .content-header,
+.icons-header {
     gap: 6px;
 }
-.container-header .content-header, .icons-header, .Companies{
+
+.container-header .content-header,
+.icons-header,
+.Companies {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container-header .content-header  a .Companies{
+
+.container-header .content-header a .Companies {
     background-color: var(--darkBlue);
     border-radius: 1.7rem;
     gap: 6px;
     height: 2rem;
 }
-.container-header .content-header  a .Companies .icon{
+
+.container-header .content-header a .Companies .icon {
     background-color: var(--white);
     border-radius: 50%;
     margin-left: 3px;
 }
 
-.container-header .content-header .Companies .icon i{
+.container-header .content-header .Companies .icon i {
     color: var(--black);
     font-size: 1.6rem;
 }
 
-.container-header .content-header .Companies p{
+.container-header .content-header .Companies p {
     color: var(--white);
 }
-.container-header .content-header .flag{
+
+.container-header .content-header .flag {
     margin-left: 10px;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
+
     color: var(--white);
     gap: 4px;
 }
-.container-header .content-header .flag i{
+
+.container-header .content-header .flag i {
     font-size: 12px;
     margin-top: 0.2rem;
 }
-.container-header .content-header .icons{
+
+.container-header .content-header .icons {
     margin-left: 9px;
 }
-.container-header .content-header .icons a{
+
+.container-header .content-header .icons a {
     color: var(--white);
     font-size: 24px;
     gap: 5px;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
-    };
-  
+    }
+
+    ;
+
 }
+
 /*Categories*/
-.container-categories .content-categories button{
+.container-categories .content-categories button {
     background-color: transparent;
     border: none;
 }
-.container-categories .content-categories button i{
+
+.container-categories .content-categories button i {
     font-size: 1.8rem;
     color: var(--white);
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
-.container-categories .content-categories button a{
+
+.container-categories .content-categories button a {
     color: var(--white);
     margin-top: 4px;
 }
 
-.container-categories .content-categories .categories a{
+.container-categories .content-categories .categories a {
     margin-top: 4px;
     color: var(--white);
     margin-left: 10px;
 }
 
+/*Splide*/
+.splide {
+    width: 100%;
+    max-width: 1500px;
+}
+
+
+.splide-content img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    
+}
+.text-overlay {
+    top: 30%;
+    left: 10%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.text-overlay h1 {
+    background: linear-gradient(to right, #FBCC55 0%, #AC8C3A 40%, #957932 40%, #E7C366 73%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+    margin: -3rem 0 0 4rem;
+    font-weight: bold;
+}
+
+.text-overlay span {
+    display: block;
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: -1.3rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.text-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 1.1rem;
+}
+.splide .container-rectangle{
+    background-color: var(--bgRectangleFather);
+    margin-top: -13rem;
+    height: 100px;
+    width: 60%;
+    margin-left: 13rem;
+
+}
+.splide .container-rectangle .content-rectangle {
+    width: 60%;
+    gap: 0.4rem;
+
+}
+.splide .container-rectangle .content-rectangle .first-rectangle {
+    width: 60%;
+}
+.splide .container-rectangle .content-rectangle .first-rectangle, .second-rectangle{
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    height:60px;
+    margin-top: 1rem;
+}
+.splide .container-rectangle .content-rectangle .first-rectangle i, .second-rectangle i{
+    font-size: 2rem;
+}
+.splide .container-rectangle .content-rectangle .first-rectangle h2, .second-rectangle h2{
+    font-size: 1rem;
+}
+.splide .container-rectangle .content-rectangle  .second-rectangle{
+    width: 50%;
+}

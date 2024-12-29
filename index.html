@@ -7,6 +7,7 @@
   <title>Vintage party</title>
   <link rel="icon" href="img/logoVintage.webp">
   <link rel="stylesheet" href="css/normalice.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/styles.css">
 
@@ -74,13 +75,57 @@
     </div>
   </div>
 
-  <div class="container-carousel">
-    <div class="content-carousel">
-
+  <div class="splide p-relative" id="carousel">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- Slide 1 -->
+        <li class="splide__slide">
+          <div class="slide-content p-relative">
+            <img src="img/carousel/girls-not-brides-cartonlab.jpg" alt="Girls Not Brides" width="1350" height="500">
+            <div class="text-overlay p-absolute">
+              <h1>For Christmas</h1>
+              <p> <span class="t-uppercase">We have</span>thousands of forniture in promotion. So proveked</p>
+            </div>
+            <div class="container-rectangle d-flex p-absolute">
+              <div class="content-rectangle d-flex container">
+                <div class="first-rectangle d-flex align-center">
+                  <i class='bx bxs-calendar'></i>
+                  <h2>Cristmas forniture</h2>
+                </div>
+                <div class="second-rectangle d-flex align-center">
+                  <i class='bx bxs-offer'></i>
+                  <h2>Offer super</h2>
+                </div>
+                <div class="button-reservation">
+                  <a href="#" class="d-flex align-center">
+                    <div class="circle">
+                      <i class='bx bxs-calendar-star'></i>
+                    </div>
+                    <h2>Make your reservation</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Slide 2 -->
+        <li class="splide__slide">
+          <div class="slide-content">
+            <img src="https://via.placeholder.com/1200x500" alt="Slide 2">
+            <div class="text-overlay">
+              <h2>Ofertas Limitadas</h2>
+              <p>Descuentos de hasta el 50% en muebles seleccionados. ¡Aprovecha!</p>
+              <div class="buttons">
+                <button class="btn">Ver catálogo</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-
-  <script src="js/splide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
