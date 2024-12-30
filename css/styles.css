@@ -16,6 +16,7 @@
 body {
     background: linear-gradient(135deg, #7d7d81 0%, #3b0764 30%, #693f8a 50%, #072a61 80%, #3b82f6 100%);
     min-height: 100vh;
+    height: auto;
 }
 
 .container {
@@ -435,6 +436,7 @@ a {
 /*Second carousel*/
 .container-carousel .content-carousel {
     background-color: var(--white);
+    margin-top: -1.3rem;
 }
 
 .container-carousel .content-carousel .iconLeft,
@@ -442,7 +444,7 @@ a {
     background-color: var(--darkExtraLight);
     width: 30px;
     height: 60px;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
     -webkit-box-shadow: 4px 10px 26px 3px rgba(214, 203, 214, 1);
     -moz-box-shadow: 4px 10px 26px 3px rgba(214, 203, 214, 1);
     box-shadow: 4px 10px 26px 3px rgb(204, 190, 204);
@@ -559,3 +561,23 @@ a {
       gap: 10px;
     }
   }
+/*Section forniture*/
+.containerForniture .contentForniture{
+    margin-left: 1rem;
+}
+.containerForniture .contentForniture .fornitureOne .img img{
+    border-radius:50% 50% 0 0 ;
+    height: 500px;
+    width: 85%;
+}
+.containerForniture .contentForniture .fornitureOne .contentAditonal{
+    margin-top: -15rem;
+}
+.containerForniture .contentForniture .fornitureOne .contentAditonal img{
+    width: 20rem;
+    margin-left: 2.6rem;
+    height: 69px;
+}
+.containerForniture .contentForniture .fornitureOne .contentAditonal h3{
+    
+}
