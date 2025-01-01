@@ -12,6 +12,7 @@
     --bgImage: #FCECDF;
     --fontFurnite: "Abril Fatface", serif;
     --yellowLight: #FFC94B;
+    --lineDivider: #E0E0E0;
 }
 
 body {
@@ -513,52 +514,126 @@ a {
     width: 130px;
     height: 130px;
 }
-.firstFournite p{
+
+.firstFournite p {
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
 }
-@keyframes girar{
-    from{
+
+@keyframes girar {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
+
 @media (max-width: 768px) {
     .firstFournite img {
-      width: 100px;
-      height: 100px;
+        width: 100px;
+        height: 100px;
     }
-    
+
     .firstFournite::after {
-      width: 100px;
-      height: 100px;
+        width: 100px;
+        height: 100px;
     }
-    
+
     .firstFournite p {
-      font-size: 12px;
+        font-size: 12px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .firstFournite img {
-      width: 80px;
-      height: 80px;
+        width: 80px;
+        height: 80px;
     }
-    
+
     .firstFournite::after {
-      width: 80px;
-      height: 80px;
+        width: 80px;
+        height: 80px;
     }
-    
+
     .firstFournite p {
-      font-size: 11px;
+        font-size: 11px;
     }
-    
+
     .content-products {
-      gap: 10px;
+        gap: 10px;
     }
-  }
-/*Section forniture*/
+}
+
+/*Login*/
+.checkBoxPassword {
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.checkBoxPassword .checkbox {
+    gap: 12px;
+    margin: 9px 0 0 8px;
+}
+
+.checkBoxPassword .checkbox input {
+    transform: scale(1.6);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.checkBoxPassword .checkbox span {
+    margin-top: 3px;
+}
+
+.checkBoxPassword .password {
+    margin: 1rem 1.3rem 0 0;/*top-right-buttom-left*/
+}
+
+.form-data-create-acount .or {
+    gap: 9px;
+}
+
+.form-data-create-acount .or span {
+    height: 2px;
+    background-color: var(--lineDivider);
+    width: 15.3rem;
+}
+
+.form-data-create-acount .or h4 {
+    font-size: 1rem;
+}
+
+.form-data-create-acount .moreOptions div {
+    border: 1px solid var(--lineDivider);
+    border-radius: 10px;
+    margin-top: 8px;
+    gap: 2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-data-create-acount .moreOptions div h4 {
+    color: var(--dark);
+}
+
+.form-data-create-acount .moreOptions div .apple img .imgapple {
+    margin-left: -1rem;
+}
+.form-data-create-acount .account{
+    gap: 9px;
+}
+.form-data-create-acount .account h4{
+    color: var(--dark);
+    font-size: 0.8rem;
+}
+.form-data-create-acount .account h4:last-child{
+    cursor: pointer;
+    color: var(--black);
+}
