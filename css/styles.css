@@ -122,7 +122,8 @@ a {
 .direction,
 .password,
 .contactPerson,
-.email {
+.email,
+.name{
     grid-column: 1 / -1;
 
 }
@@ -139,8 +140,10 @@ a {
 #password,
 #contactPerson,
 #email,
-#socialReason {
+#socialReason,
+#name{
     width: 101%;
+
 }
 
 .container-create-acount .content-create-acount .form-create-acount .form-data-create-acount input {
@@ -636,4 +639,8 @@ a {
 .form-data-create-acount .account h4:last-child{
     cursor: pointer;
     color: var(--black);
+}
+/*Retrieve password*/
+.retrievePassword{
+    margin-top: 5rem;
 }
