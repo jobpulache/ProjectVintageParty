@@ -13,6 +13,7 @@
     --fontFurnite: "Abril Fatface", serif;
     --yellowLight: #FFC94B;
     --lineDivider: #E0E0E0;
+    --red: #D20000;
 }
 
 body {
@@ -123,7 +124,7 @@ a {
 .password,
 .contactPerson,
 .email,
-.name{
+.name {
     grid-column: 1 / -1;
 
 }
@@ -141,7 +142,7 @@ a {
 #contactPerson,
 #email,
 #socialReason,
-#name{
+#name {
     width: 101%;
 
 }
@@ -594,7 +595,8 @@ a {
 }
 
 .checkBoxPassword .password {
-    margin: 1rem 1.3rem 0 0;/*top-right-buttom-left*/
+    margin: 1rem 1.3rem 0 0;
+    /*top-right-buttom-left*/
 }
 
 .form-data-create-acount .or {
@@ -629,55 +631,88 @@ a {
 .form-data-create-acount .moreOptions div .apple img .imgapple {
     margin-left: -1rem;
 }
-.form-data-create-acount .account{
+
+.form-data-create-acount .account {
     gap: 9px;
 }
-.form-data-create-acount .account h4{
+
+.form-data-create-acount .account h4 {
     color: var(--dark);
     font-size: 0.8rem;
 }
-.form-data-create-acount .account h4:last-child{
+
+.form-data-create-acount .account h4:last-child {
     cursor: pointer;
     color: var(--black);
 }
+
 /*Retrieve password*/
-.retrievePassword{
+.retrievePassword {
     margin-top: 5rem;
 }
+
 /*Container Variety*/
-.container-variety .content-variety{
-    margin-left: 8px;
+.container-variety .content-variety {
     gap: 3rem;
+    margin: 10rem 0 0 8px;
 }
-.container-variety .content-variety .content-img img{
-   border-radius: 50% 50% 0 0;
-   height: 3rem;
+
+.container-variety .content-variety .ia {
+    margin: -3rem 0 0 69rem;
 }
-.container-variety .content-variety .content-img  .img-fournite{
+
+.container-variety .content-variety .ia .message img {
+    margin: -9rem 0 0 -5rem;
+}
+
+.container-variety .content-variety .ia .message .text-message h5 {
+    margin-top: -8rem;
+    margin-left: -3rem;
+    text-align: justify;
+    color: var(--red);
+    font-family: var(--fontFurnite);
+    transform: rotate(-45deg);
+    width: 5rem;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+.container-variety .content-variety .content-img img {
+    border-radius: 50% 50% 0 0;
+    height: 3rem;
+}
+
+.container-variety .content-variety .content-img .img-fournite {
     height: 22rem;
 }
-.container-variety .content-variety .content-img .bg-cruz .description{
+
+.container-variety .content-variety .content-img .bg-cruz .description {
     margin: -11rem 0 0 1.4rem;
 }
-.container-variety .content-variety .content-img  .description h2{
+
+.container-variety .content-variety .content-img .description h2 {
     color: var(--white);
     font-family: var(--fontFurnite);
     margin: .9rem 0 0 2rem;
 }
-.container-variety .content-variety .content-img  .description .content-sec h4{
+
+.container-variety .content-variety .content-img .description .content-sec h4 {
     color: var(--yellowLight);
     width: 20rem;
     text-align: center;
     margin-left: -12px;
 }
-.container-variety  .reservate{
+
+.container-variety .reservate {
     width: 110px;
     height: 100px;
     background-color: var(--darkBlue);
     border-radius: 50%;
-    margin:-4rem 0 0 -7px ;
+    margin: -4rem 0 0 -7px;
 }
-.container-variety  .reservate h3 , i{
-    margin-top: 2rem;    
+
+.container-variety .reservate h3,
+i {
+    margin-top: 2rem;
     color: var(--white);
 }
