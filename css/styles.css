@@ -644,3 +644,40 @@ a {
 .retrievePassword{
     margin-top: 5rem;
 }
+/*Container Variety*/
+.container-variety .content-variety{
+    margin-left: 8px;
+    gap: 3rem;
+}
+.container-variety .content-variety .content-img img{
+   border-radius: 50% 50% 0 0;
+   height: 3rem;
+}
+.container-variety .content-variety .content-img  .img-fournite{
+    height: 22rem;
+}
+.container-variety .content-variety .content-img .bg-cruz .description{
+    margin: -11rem 0 0 1.4rem;
+}
+.container-variety .content-variety .content-img  .description h2{
+    color: var(--white);
+    font-family: var(--fontFurnite);
+    margin: .9rem 0 0 2rem;
+}
+.container-variety .content-variety .content-img  .description .content-sec h4{
+    color: var(--yellowLight);
+    width: 20rem;
+    text-align: center;
+    margin-left: -12px;
+}
+.container-variety  .reservate{
+    width: 110px;
+    height: 100px;
+    background-color: var(--darkBlue);
+    border-radius: 50%;
+    margin:-4rem 0 0 -7px ;
+}
+.container-variety  .reservate h3 , i{
+    margin-top: 2rem;    
+    color: var(--white);
+}
