@@ -14,7 +14,12 @@
     --yellowLight: #FFC94B;
     --lineDivider: #E0E0E0;
     --red: #D20000;
+    --greenLightMedio: #0E5F50;
+    --greenDark: #031F1E;
+    --greenLight: #86B09C;
+    --greenLightDark: #86B09C;
 }
+
 
 body {
     background: linear-gradient(135deg, #7d7d81 0%, #3b0764 30%, #693f8a 50%, #072a61 80%, #3b82f6 100%);
@@ -781,10 +786,35 @@ i {
     height: 13rem;
     transition: transform .35s ease-in-out;
     object-fit: cover;
+
     &:hover {
         cursor: pointer;
         transform: scale(1.1);
     }
 }
+
 /*Sintaxis de transition*/
 /*transition: propiedad duración función-de-tiempo retardo;*/
+/*Here  more categories for you*/
+.container-moreCategories  .content-moreCategories{
+    margin-top: .9rem;
+    gap: 2rem;
+}
+.container-moreCategories .content-moreCategories .bg-greenLightMedio {
+    background-color: var(--greenLightMedio);
+    width: auto;
+    height: 30rem;
+}
+.container-moreCategories .content-moreCategories .bg-greenLightMedio .img img{
+    border-radius: 50px;
+    height: 19rem;
+}
+.container-moreCategories .content-moreCategories .iconsOptions{
+    gap: 1rem;
+}
+.container-moreCategories .content-moreCategories .iconsOptions i{
+    font-size: 2rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
