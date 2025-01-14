@@ -716,24 +716,29 @@ i {
     margin-top: 2rem;
     color: var(--white);
 }
+
 /*Your party*/
-.yourparty .content-yourParty{
+.yourparty .content-yourParty {
     flex-direction: column;
     margin-top: 3rem;
 }
-.yourparty .content-yourParty .circle-yourParty{
+
+.yourparty .content-yourParty .circle-yourParty {
     margin-left: 27rem;
 }
-.yourparty .content-yourParty .circle-yourParty img{
+
+.yourparty .content-yourParty .circle-yourParty img {
     width: 30rem;
 }
-.yourparty .content-yourParty .circle-yourParty .title-yourParty h3{
+
+.yourparty .content-yourParty .circle-yourParty .title-yourParty h3 {
     margin: -2.7rem 0 0 2.3rem;
     color: var(--white);
     font-family: var(--fontFurnite);
     font-size: 1.5rem;
 }
-.yourparty .content-yourParty .content-yourPartyText{
+
+.yourparty .content-yourParty .content-yourPartyText {
     text-align: center;
     width: 24rem;
     font-size: 1.6rem;
@@ -741,27 +746,45 @@ i {
     margin-left: 29rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.yourparty .content-yourParty .viewNow  {
+
+.yourparty .content-yourParty .viewNow {
     width: 7rem;
     height: 2.4rem;
     background-color: var(--yellowLight);
     margin-left: 37rem;
     margin-top: -1.5rem;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
-.yourparty .content-yourParty .viewNow .redPoint{
+
+.yourparty .content-yourParty .viewNow .redPoint {
     width: 1rem;
     height: 1rem;
     background-color: var(--red);
     border-radius: 50%;
     margin-top: .7rem;
 }
-.yourparty .content-yourParty .viewNow .content h5{
+
+.yourparty .content-yourParty .viewNow .content h5 {
     margin-top: 0.8rem;
     margin-left: .4rem;
 }
-.yourparty .content-yourParty .img-yourParty{
+
+.yourparty .content-yourParty .img-yourParty {
     margin-top: 4rem;
+    gap: 1rem;
 }
+
+.yourparty .content-yourParty .img-yourParty img {
+    height: 13rem;
+    transition: transform .35s ease-in-out;
+    object-fit: cover;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+/*Sintaxis de transition*/
+/*transition: propiedad duración función-de-tiempo retardo;*/
