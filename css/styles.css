@@ -758,6 +758,7 @@ i {
     background-color: var(--yellowLight);
     margin-left: 37rem;
     margin-top: -1.5rem;
+    gap: 2rem;
 
     &:hover {
         cursor: pointer;
@@ -769,12 +770,15 @@ i {
     height: 1rem;
     background-color: var(--red);
     border-radius: 50%;
-    margin-top: .7rem;
+    margin: .7rem 0 0 -5rem;
 }
 
-.yourparty .content-yourParty .viewNow .content h5 {
-    margin-top: 0.8rem;
-    margin-left: .4rem;
+.yourparty .content-yourParty .viewNow .two {
+    gap: .4rem;
+}
+
+.textViewNow {
+    margin-top: .6rem;
 }
 
 .yourparty .content-yourParty .img-yourParty {
@@ -796,25 +800,30 @@ i {
 /*Sintaxis de transition*/
 /*transition: propiedad duración función-de-tiempo retardo;*/
 /*Here  more categories for you*/
-.container-moreCategories  .content-moreCategories{
+.container-moreCategories .content-moreCategories {
     margin-top: .9rem;
     gap: 2rem;
 }
+
 .container-moreCategories .content-moreCategories .bg-greenLightMedio {
     background-color: var(--greenLightMedio);
-    width:auto;
+    width: auto;
     height: 30rem;
 }
-.container-moreCategories .content-moreCategories .bg-greenLightMedio .img img{
+
+.container-moreCategories .content-moreCategories .bg-greenLightMedio .img img {
     border-radius: 50px;
     height: 19rem;
 }
-.container-moreCategories .content-moreCategories .iconsOptions{
+
+.container-moreCategories .content-moreCategories .iconsOptions {
     gap: 1rem;
 }
-.container-moreCategories .content-moreCategories .iconsOptions i{
+
+.container-moreCategories .content-moreCategories .iconsOptions i {
     font-size: 2rem;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
