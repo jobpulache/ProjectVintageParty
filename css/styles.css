@@ -802,7 +802,7 @@ i {
 }
 .container-moreCategories .content-moreCategories .bg-greenLightMedio {
     background-color: var(--greenLightMedio);
-    width: auto;
+    width:auto;
     height: 30rem;
 }
 .container-moreCategories .content-moreCategories .bg-greenLightMedio .img img{
