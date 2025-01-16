@@ -846,6 +846,7 @@ i {
     }
 
     ;
+    color: var(--white);
 }
 
 .sectionCustomersViews h2 {
@@ -864,6 +865,24 @@ i {
     margin-top: -1.5rem;
 
     &:hover {
+        cursor: pointer;
+    }
+}
+.sectionCustomersViews .content-customersView .firstSectionCustomersView i{
+    background-color: var(--yellowLight);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sectionPrice h2{
+    margin-left: -.1rem;
+}
+.sectionPrice .content-price{
+    color: var(--white);
+}
+.sectionPrice .content-price .sectionAllPrice, .firstSectionPrice, .secondSectionPrice, .threeSectionPrice, .sectionDiscount .content-discount {
+    margin-top: .5rem;
+    &:hover{
         cursor: pointer;
     }
 }
