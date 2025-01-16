@@ -827,3 +827,43 @@ i {
         cursor: pointer;
     }
 }
+
+/*Section forniture*/
+.container-tabletsLounge h2 {
+    color: var(--white);
+    margin-left: 4rem;
+}
+
+.container-tabletsLounge .contentTabletsLounge {
+    margin-left: 4rem;
+}
+
+.container-tabletsLounge .contentTabletsLounge .firstSection {
+    margin-bottom: .5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    ;
+}
+
+.sectionCustomersViews h2 {
+    margin-left: -.4rem;
+}
+
+.sectionCustomersViews .content-customersView .firstSection {
+    margin-top: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+.sectionCustomersViews .content-customersView .secondSection,
+.threeSection,
+.fourSection,
+.fiveSection {
+    margin-top: -1.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
