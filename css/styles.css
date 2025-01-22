@@ -868,21 +868,119 @@ i {
         cursor: pointer;
     }
 }
-.sectionCustomersViews .content-customersView .firstSectionCustomersView i{
+
+.sectionCustomersViews .content-customersView .firstSectionCustomersView i {
     background-color: var(--yellowLight);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-.sectionPrice h2{
+
+.sectionPrice h2 {
     margin-left: -.1rem;
 }
-.sectionPrice .content-price{
+
+.sectionPrice .content-price {
     color: var(--white);
 }
-.sectionPrice .content-price .sectionAllPrice, .firstSectionPrice, .secondSectionPrice, .threeSectionPrice, .sectionDiscount .content-discount {
+
+.sectionPrice .content-price .sectionAllPrice,
+.firstSectionPrice,
+.secondSectionPrice,
+.threeSectionPrice,
+.sectionDiscount .content-discount {
     margin-top: .5rem;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
+}
+
+/*Page fournite - section product.*/
+.container-forniture .content-forniture .firstForniture {
+    border: 1px solid var(--white);
+    width: 20rem;
+}
+
+.container-forniture .content-forniture .firstForniture img {
+    display: block;
+    margin: 10px auto;
+}
+
+.container-forniture .content-forniture .firstForniture .descriptionForniture a {
+    color: var(--white);
+}
+
+.container-forniture .content-forniture .firstForniture .descriptionForniture a span {
+    text-align: center;
+    display: block;
+    width: 310px;
+}
+
+.container-forniture .content-forniture .firstForniture .startsReview {
+    margin: 1rem 0 0 1rem;
+}
+
+.container-forniture .content-forniture .firstForniture .startsReview i {
+    background-color: var(--yellowLight);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: .2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.container-forniture .content-forniture .firstForniture .startsReview i:last-of-type {
+    background-color: var(--white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container-forniture .content-forniture .firstForniture .startsReview .down i {
+    background-color: var(--black);
+}
+
+.container-forniture .content-forniture .firstForniture .startsReview .beforePrice span {
+    color: var(--greenLight);
+    font-size: 1.3rem;
+}
+
+.container-forniture .content-forniture .firstForniture .secondDescription span {
+    color: var(--grayLight);
+    margin: .5rem 0 0 1rem;
+    display: block;
+    width: 200px;
+}
+
+.container-forniture .content-forniture .firstForniture .price h4 {
+    color: var(--white);
+    margin: .5rem 0 0 1rem;
+    font-size: 1.5rem;
+}
+.container-forniture .content-forniture .firstForniture .price  span{
+    margin: 0 0 0 2rem;
+    color: var(--grayLight);
+}   
+.container-forniture .content-forniture .firstForniture .delivery h5{
+    color: var(--white);
+    margin: .5rem 0 0 1rem;
+    font-family: sans-serif;
+}
+.container-forniture .content-forniture .firstForniture .addCart {
+    margin: 1rem 0 0 1rem;
+    background-color: var(--yellowLight);
+    width: 6.6rem;
+    height: 1.9rem;
+    border-radius: 1rem;
+}
+.container-forniture .content-forniture .firstForniture .addCart a{
+    color: var(--black);
+}
+.container-forniture .content-forniture .firstForniture .addCart  span{
+    display: block;
+    
 }
